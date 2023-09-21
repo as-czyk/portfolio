@@ -39,11 +39,13 @@
 
     &--navLinks {
       @include flexColumnStartContainer;
+      cursor: var(--default-cursor)
     }
 
     &--iconLinks {
       @include flexRowStartContainer;
       margin-top: auto;
+      cursor: var(--default-cursor)
     }
   }
 }
