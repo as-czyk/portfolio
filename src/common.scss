@@ -1,0 +1,24 @@
+:root {
+  --default-container-gap: 2rem;
+  --default-container-margin: 5rem;
+}
+
+@mixin flexColumnStartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: var(--default-container-gap);
+
+}
+
+@mixin flexRowStartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: var(--default-container-gap);
+
+}

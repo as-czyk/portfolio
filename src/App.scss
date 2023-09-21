@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
+@import './common.scss';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  margin-left: 18rem;
+  margin-right: 18rem;
+
+  gap: var(--default-container-gap);
+
+  &__contentArea {
+    grid-area: 1 / 2 / 6 / 3;
+    @include flexColumnStartContainer;
+
+    margin-top: var(--default-container-margin);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.stickyContainer {
+  grid-area: 1 / 1 / 6 / 1;
 
-.App-link {
-  color: #61dafb;
-}
+  @include flexColumnStartContainer;
+  height: 100vh;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  /* Make Flexbox container sticky */
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+
+  &__content {
+    @include flexColumnStartContainer;
+
+    height:100%;
+
+    margin-top: var(--default-container-margin);;
+    margin-bottom: var(--default-container-margin);;
+
+    &--navLinks {
+      @include flexColumnStartContainer;
+    }
+
+    &--iconLinks {
+      @include flexRowStartContainer;
+      margin-top: auto;
+    }
   }
 }
