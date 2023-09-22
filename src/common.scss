@@ -1,7 +1,33 @@
 :root {
+  font-family: 'Lato', 'sans-serif';
+  background-color: var(--primary);
+  color: var(--textColor);
+
   --default-container-gap: 2rem;
   --default-container-margin: 5rem;
+  --default-border-radius: .5rem;
   --default-cursor: pointer;
+
+  --small-fontSize: 12px;
+
+  /* Colors */
+  --primary: #432f70;
+  --primaryLight: #c2b5e0;
+  --primaryDark: #7152b6;
+
+  --secondary: #713770;
+  --secondaryLight: #f4e8f4;
+  --secondaryDark: #884287;
+
+  --third: #b34270;
+  --thirdLight: #eac5d4;
+  --thirdDark: #cd779a;
+
+  --action: #e95670;
+  --actionLight: #f8ccd4;
+  --actionDark: #f0899b;
+
+  --textColor: #ffffff;
 }
 
 @mixin flexColumnStartContainer {

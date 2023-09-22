@@ -1,0 +1,37 @@
+@import "../common.scss";
+
+.experienceSectionContainer {
+  @include flexColumnStartContainer;
+  margin-top: 5rem;
+}
+
+.singleTagContainer {
+  @include flexRowStartContainer;
+  gap: .5rem;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__tag {
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: var(--third);
+    color: var(--thirdLight);
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: var(--small-fontSize)
+  }
+}
+
+.experienceContainer {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr;
+
+  &__time {
+    @include flexColumnStartContainer
+  }
+
+  &__content {
+    @include flexColumnStartContainer
+  }
+}

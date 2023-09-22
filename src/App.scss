@@ -39,7 +39,8 @@
 
     &--navLinks {
       @include flexColumnStartContainer;
-      cursor: var(--default-cursor)
+      margin-top: 3rem;
+      cursor: var(--default-cursor);
     }
 
     &--iconLinks {
