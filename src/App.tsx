@@ -18,6 +18,18 @@ export enum Section {
 export const App = () => {
   const [activeSection, setActiveSection] = useState<Section>(Section.ABOUT);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(interSectionCallback);
+
+    Object.values(Section).map((section: string) => {
+      observer.observe(document?.getElementById(section) as any);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const clickHandler = (event: any, section: Section) => {
     event.preventDefault();
     const element = document.getElementById(section);
@@ -31,20 +43,10 @@ export const App = () => {
     }
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting)
-        setActiveSection(entries[0].target.id as Section);
-    });
-
-    Object.values(Section).map((section: string) => {
-      observer.observe(document?.getElementById(section) as any);
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  const interSectionCallback = (entries: IntersectionObserverEntry[]) => {
+    if (entries[0].isIntersecting)
+      setActiveSection(entries[0].target.id as Section);
+  };
 
   return (
     <div className="mainContainer">
@@ -52,9 +54,10 @@ export const App = () => {
         <div className="stickyContainer__content">
           <Title />
           <div className="stickyContainer__content--navLinks">
-            {Object.values(Section).map((section) => {
+            {Object.values(Section).map((section, index) => {
               return (
                 <a
+                  key={section + index}
                   className={activeSection === section ? "activeNavLink" : ""}
                   onClick={(e) => clickHandler(e, section)}
                 >
