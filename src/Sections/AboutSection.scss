@@ -1,3 +1,6 @@
-.aboutSectionContainer {
+@import "../common.scss";
 
+.aboutSectionContainer {
+  @include flexColumnStartContainer;
+  font-size: 18px;
 }

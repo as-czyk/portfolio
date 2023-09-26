@@ -1,0 +1,9 @@
+@import '../common.scss';
+
+.titleContainer {
+  @include flexColumnStartContainer;
+
+  p {
+    font-size: 18px;
+  }
+}
