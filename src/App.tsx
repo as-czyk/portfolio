@@ -4,15 +4,15 @@ import { ExperienceSection } from "./Sections/ExperienceSection";
 import { ProjectSection } from "./Sections/ProjectSection";
 import { Experience } from "./Content/Experience";
 import { Academic } from "./Content/Academic";
+import { Title } from "./Comps/Title";
 
 import "./App.scss";
-import { Title } from "./comps/Title";
 
 export enum Section {
-  ABOUT = "aboutSection",
-  EXPERIENCE = "experienceSection",
-  ACADEMIC = "academicSection",
-  PROJECT = "projectSection",
+  ABOUT = "About",
+  EXPERIENCE = "Experience",
+  ACADEMIC = "Academic",
+  PROJECT = "Project",
 }
 
 export const App = () => {
@@ -52,36 +52,16 @@ export const App = () => {
         <div className="stickyContainer__content">
           <Title />
           <div className="stickyContainer__content--navLinks">
-            <a
-              className={activeSection === Section.ABOUT ? "activeNavLink" : ""}
-              onClick={(e) => clickHandler(e, Section.ABOUT)}
-            >
-              About
-            </a>
-            <a
-              className={
-                activeSection === Section.EXPERIENCE ? "activeNavLink" : ""
-              }
-              onClick={(e) => clickHandler(e, Section.EXPERIENCE)}
-            >
-              Experience
-            </a>
-            <a
-              className={
-                activeSection === Section.ACADEMIC ? "activeNavLink" : ""
-              }
-              onClick={(e) => clickHandler(e, Section.ACADEMIC)}
-            >
-              Academic
-            </a>
-            <a
-              className={
-                activeSection === Section.PROJECT ? "activeNavLink" : ""
-              }
-              onClick={(e) => clickHandler(e, Section.PROJECT)}
-            >
-              Projects
-            </a>
+            {Object.values(Section).map((section) => {
+              return (
+                <a
+                  className={activeSection === section ? "activeNavLink" : ""}
+                  onClick={(e) => clickHandler(e, section)}
+                >
+                  {section}
+                </a>
+              );
+            })}
           </div>
           <div className="stickyContainer__content--iconLinks">
             <span>LinkedIn</span>

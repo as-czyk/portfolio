@@ -2,6 +2,7 @@ import React from "react";
 
 import { Section } from "../App";
 import "./ExperienceSection.scss";
+import { AnchorElement } from "../Comps/AnchorElement";
 
 export type Experience = {
   startYear: number;
@@ -25,16 +26,12 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
       {entries.map((experience: Experience, index) => {
         if (index === 1) {
           return (
-            <>
-              <div
-                id={sectionId}
-                //style={{ display: "none" }}
-              />
+            <AnchorElement sectionId={sectionId}>
               <ExperienceItem
                 key={`${experience.title}_${index}`}
                 {...experience}
               />
-            </>
+            </AnchorElement>
           );
         }
 
