@@ -67,8 +67,14 @@ export const App = () => {
                   onClick={(e) => clickHandler(e, section)}
                 >
                   <div className={"navLinkContainer"}>
-                    <div className={"navLinkContainer__bar"} />
-                    <span>{section}</span>
+                    <div
+                      className={
+                        activeSection === section
+                          ? "navLinkContainer__bar--active"
+                          : "navLinkContainer__bar"
+                      }
+                    />
+                    {section}
                   </div>
                 </a>
               );

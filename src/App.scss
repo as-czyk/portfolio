@@ -59,20 +59,30 @@
   gap: .8rem;
 
   &__bar {
-    width: 20px;
+    width: 25px;
     height: 1px;
-    background-color: var(--secondary)
+    background-color: var(--secondary);
+    transition: width 1s;
+
+    &--active {
+      @extend .navLinkContainer__bar;
+      width: 60px;
+    }
   }
-}
 
-.iconButton {
-  color: var(--secondary);
-  :hover {
-    color: var(--secondaryLight);
-
+  &:hover > .navLinkContainer__bar {
+    width: 60px;
   }
 }
 
 .activeNavLink {
   color: var(--secondary)
+}
+
+.iconButton {
+  color: var(--secondary);
+
+  &:hover {
+    color: var(--secondaryLight);
+  }
 }
