@@ -1,23 +1,28 @@
-import { Experience } from "../Sections/ExperienceSection";
+type Project = {
+  link?: string;
+  title: string;
+  description: string;
+  isAnchor?: boolean;
+  tags: Array<string>;
+  img: any;
+};
 
-export const Academic: Array<Experience> = [
+export const Project: any = [
   {
-    startYear: 2017,
-    endYear: 2020,
-    title: "IT-Management",
-    company: "Master of Science",
+    title: "Digital Dcctor",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    tags: ["React", "TypeScript", "JavaScript", "SCSS", "Java"],
+    link: "",
+    img: "",
+    isAnchor: true,
+    tags: ["React", "TypeScript", "SCSS"],
   },
   {
-    startYear: 2013,
-    endYear: 2016,
-    title: "Digital Media",
-    company: "Bachelor of Arts",
+    title: "AWS Amplify",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    tags: ["BPM", "ODM", "Automated Testing", "NodeJS", "Iconic", "Scrum"],
-    isAnchor: true,
+    link: "",
+    img: "",
+    tags: ["AWS", "Aplify", "React"],
   },
 ];

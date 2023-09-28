@@ -5,6 +5,10 @@ import { ProjectSection } from "./Sections/ProjectSection";
 import { Experience } from "./Content/Experience";
 import { Academic } from "./Content/Academic";
 import { Title } from "./Comps/Title";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import { IconButton } from "@mui/material";
 
 import "./App.scss";
 
@@ -67,9 +71,15 @@ export const App = () => {
             })}
           </div>
           <div className="stickyContainer__content--iconLinks">
-            <span>LinkedIn</span>
-            <span>GitHub</span>
-            <span>Instagram</span>
+            <IconButton>
+              <LinkedInIcon sx={{ fontSize: 35 }} />
+            </IconButton>
+            <IconButton>
+              <GitHubIcon sx={{ fontSize: 35 }} />
+            </IconButton>
+            <IconButton>
+              <YouTubeIcon sx={{ fontSize: 35 }} />
+            </IconButton>
           </div>
         </div>
       </div>

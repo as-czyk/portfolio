@@ -10,11 +10,12 @@ export type Experience = {
   title: string;
   description: string;
   company: string;
-  link: string;
+  link?: string;
   tags: Array<string>;
+  isAnchor?: boolean;
 };
 
-type ExperienceSectionProps = {
+export type ExperienceSectionProps = {
   entries: Array<Experience>;
   sectionId: Section;
 };
@@ -24,24 +25,20 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
   return (
     <div className="experienceSectionContainer">
       {entries.map((experience: Experience, index) => {
-        if (index === 1) {
-          return (
-            <AnchorElement sectionId={sectionId}>
-              <ExperienceItem
-                key={`${experience.title}_${index}`}
-                {...experience}
-              />
-            </AnchorElement>
-          );
-        }
-
-        return (
+        const Item = (
           <ExperienceItem
             key={`${experience.title}_${index}`}
             {...experience}
           />
         );
+
+        if (experience?.isAnchor) {
+          return <AnchorElement sectionId={sectionId}>{Item}</AnchorElement>;
+        }
+
+        return Item;
       })}
+      <span>View full Resume</span>
     </div>
   );
 };

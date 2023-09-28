@@ -2,5 +2,6 @@
 
 .aboutSectionContainer {
   @include flexColumnStartContainer;
+  margin-bottom: 12rem;
   font-size: 18px;
 }
