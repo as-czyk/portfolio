@@ -5,11 +5,12 @@ import { ProjectSection } from "./Sections/ProjectSection";
 import { Experience } from "./Content/Experience";
 import { Academic } from "./Content/Academic";
 import { Title } from "./Comps/Title";
+import { Project } from "./Content/Project";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { IconButton } from "@mui/material";
-import { Project } from "./Content/Project";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import "./App.scss";
 
@@ -107,6 +108,14 @@ export const App = () => {
         <ExperienceSection
           entries={Experience}
           sectionId={Section.EXPERIENCE}
+          linkComp={
+            <div className="experienceSectionContainer__link">
+              <a>View full Resume</a>
+              <ArrowRightAltIcon
+                className={"experienceSectionContainer__link--icon"}
+              />
+            </div>
+          }
         />
         <ExperienceSection
           entries={Academic}

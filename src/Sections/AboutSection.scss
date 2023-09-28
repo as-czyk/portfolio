@@ -4,4 +4,9 @@
   @include flexColumnStartContainer;
   margin-bottom: 8rem;
   font-size: 18px;
+
+  ::selection {
+    background-color: var(--secondary);
+    color: var(--primary)
+  }
 }

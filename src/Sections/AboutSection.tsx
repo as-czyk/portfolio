@@ -10,8 +10,8 @@ export const AboutSection = () => {
       className="aboutSectionContainer"
     >
       <span>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore
+        Hi, it's Aron, Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore
       </span>
       <span>
         et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam

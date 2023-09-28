@@ -2,6 +2,32 @@
 
 .experienceSectionContainer {
   @include flexColumnStartContainer;
+
+  &__link {
+    @include flexRowStartContainer;
+    align-items: center;
+    gap: .5rem;
+
+    cursor: var(--default-cursor);
+
+    &--icon {
+      transition: transform 1s ease;
+
+      &:hover {
+        transform: translateX(10px);
+        color: var(--secondary)
+      }
+    }
+
+    &:hover > .experienceSectionContainer__link--icon {
+      transform: translateX(10px);
+      color: var(--secondary)
+    }
+
+    &:hover {
+      text-decoration: underline var(--secondary);
+    }
+  }
 }
 
 .singleTagContainer {
@@ -13,8 +39,8 @@
   &__tag {
     border-radius: 1rem;
     padding: .5rem;
-    background-color: var(--secondaryDark);
-    color: var(--primaryLight);
+    background-color: var(--action);
+    color: var(--primary);
     font-weight: bold;
     white-space: nowrap;
     font-size: var(--small-fontSize)

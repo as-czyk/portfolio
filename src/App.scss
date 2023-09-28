@@ -5,8 +5,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
-  margin-left: 25rem;
-  margin-right: 25rem;
+  margin-left: 30rem;
+  margin-right: 30rem;
 
   gap: var(--default-container-gap);
 
@@ -61,17 +61,23 @@
   &__bar {
     width: 25px;
     height: 1px;
-    background-color: var(--secondary);
+    background-color: var(--textColor);
     transition: width 1s;
 
     &--active {
       @extend .navLinkContainer__bar;
+      background-color: var(--secondary);
       width: 60px;
     }
   }
 
   &:hover > .navLinkContainer__bar {
+    background-color: var(--secondary);
     width: 60px;
+  }
+
+  &:hover {
+    color: var(--secondary);
   }
 }
 

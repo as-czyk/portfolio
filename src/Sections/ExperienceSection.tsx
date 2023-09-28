@@ -1,8 +1,8 @@
 import React from "react";
-
 import { Section } from "../App";
-import "./ExperienceSection.scss";
 import { AnchorElement } from "../Comps/AnchorElement";
+
+import "./ExperienceSection.scss";
 
 export type Experience = {
   startYear: number;
@@ -11,17 +11,18 @@ export type Experience = {
   description: string;
   company: string;
   link?: string;
-  tags: Array<string>;
+  tags?: Array<string>;
   isAnchor?: boolean;
 };
 
 export type ExperienceSectionProps = {
   entries: Array<Experience>;
   sectionId: Section;
+  linkComp?: React.ReactElement;
 };
 
 export const ExperienceSection = (props: ExperienceSectionProps) => {
-  const { entries, sectionId } = props;
+  const { entries, sectionId, linkComp = "" } = props;
   return (
     <div className="experienceSectionContainer">
       {entries.map((experience: Experience, index) => {
@@ -38,7 +39,7 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
 
         return Item;
       })}
-      <span>View full Resume</span>
+      {linkComp}
     </div>
   );
 };
@@ -57,7 +58,7 @@ export const ExperienceItem = (props: Experience) => {
         </span>
         <span>{description}</span>
         <div className={"singleTagContainer"}>
-          {tags.map((tag: string, index) => {
+          {tags?.map((tag: string, index) => {
             return (
               <SingleTag
                 key={`${tag}_${index}`}
