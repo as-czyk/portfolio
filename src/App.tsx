@@ -11,6 +11,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import { IconButton } from "@mui/material";
 
 import "./App.scss";
+import { Project } from "./Content/Project";
 
 export enum Section {
   ABOUT = "About",
@@ -93,7 +94,10 @@ export const App = () => {
           entries={Academic}
           sectionId={Section.ACADEMIC}
         />
-        <ProjectSection />
+        <ProjectSection
+          entries={Project}
+          sectionId={Section.PROJECT}
+        />
       </div>
     </div>
   );

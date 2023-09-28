@@ -71,7 +71,7 @@ export const ExperienceItem = (props: Experience) => {
   );
 };
 
-const SingleTag = (props: { name: string }) => {
+export const SingleTag = (props: { name: string }) => {
   const { name } = props;
   return <div className="singleTagContainer__tag">{name}</div>;
 };

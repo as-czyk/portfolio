@@ -13,6 +13,7 @@
   &__contentArea {
     grid-area: 1 / 2 / 6 / 3;
     @include flexColumnStartContainer;
+    gap: 10rem;
 
     margin-top: var(--default-container-margin);
   }
