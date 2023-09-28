@@ -7,6 +7,7 @@
   --default-container-margin: 5rem;
   --default-border-radius: .5rem;
   --default-cursor: pointer;
+  --icon-fontSize: 35rem;
 
   --small-fontSize: 12px;
 
@@ -16,14 +17,14 @@
   --primaryDark: #000000;
 
   --secondary: #D6CC99;
-  --secondaryLight: #dad1a3;
+  --secondaryLight: #eae5cc;
   --secondaryDark: #cbbf7f;
 
   --action: #FDE5D4;
   --actionLight: #fde8d8;
   --actionDark: #fbcaa8;
 
-  --textColor: #ffffff;
+  --textColor: #d9e1e1;
 }
 
 @mixin flexColumnStartContainer {

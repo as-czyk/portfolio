@@ -53,6 +53,26 @@
   }
 }
 
+.navLinkContainer {
+  @include flexRowStartContainer;
+  align-items: center;
+  gap: .8rem;
+
+  &__bar {
+    width: 20px;
+    height: 1px;
+    background-color: var(--secondary)
+  }
+}
+
+.iconButton {
+  color: var(--secondary);
+  :hover {
+    color: var(--secondaryLight);
+
+  }
+}
+
 .activeNavLink {
   color: var(--secondary)
 }

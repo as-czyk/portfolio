@@ -6,7 +6,7 @@
 
 .singleTagContainer {
   @include flexRowStartContainer;
-  gap: .5rem;
+  gap: .8rem;
   align-items: center;
   flex-wrap: wrap;
 
@@ -14,7 +14,7 @@
     border-radius: 1rem;
     padding: .5rem;
     background-color: var(--secondaryDark);
-    color: var(--textColor);
+    color: var(--primaryLight);
     font-weight: bold;
     white-space: nowrap;
     font-size: var(--small-fontSize)

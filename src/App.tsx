@@ -9,9 +9,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { IconButton } from "@mui/material";
+import { Project } from "./Content/Project";
 
 import "./App.scss";
-import { Project } from "./Content/Project";
 
 export enum Section {
   ABOUT = "About",
@@ -66,21 +66,33 @@ export const App = () => {
                   className={activeSection === section ? "activeNavLink" : ""}
                   onClick={(e) => clickHandler(e, section)}
                 >
-                  {section}
+                  <div className={"navLinkContainer"}>
+                    <div className={"navLinkContainer__bar"} />
+                    <span>{section}</span>
+                  </div>
                 </a>
               );
             })}
           </div>
           <div className="stickyContainer__content--iconLinks">
-            <IconButton>
-              <LinkedInIcon sx={{ fontSize: 35 }} />
-            </IconButton>
-            <IconButton>
-              <GitHubIcon sx={{ fontSize: 35 }} />
-            </IconButton>
-            <IconButton>
-              <YouTubeIcon sx={{ fontSize: 35 }} />
-            </IconButton>
+            <a href={"https://www.linkedin.com/in/aronscheffczyk/"}>
+              <LinkedInIcon
+                sx={{ fontSize: 35 }}
+                className="iconButton"
+              />
+            </a>
+            <a href={"https://github.com/as-czyk/"}>
+              <GitHubIcon
+                sx={{ fontSize: 35 }}
+                className="iconButton"
+              />
+            </a>
+            <a href={"https://www.youtube.com"}>
+              <YouTubeIcon
+                sx={{ fontSize: 35 }}
+                className="iconButton"
+              />
+            </a>
           </div>
         </div>
       </div>
