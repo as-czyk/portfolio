@@ -84,7 +84,7 @@ export const App = () => {
           </div>
         </div>
       </div>
-      <div className="mainContainer__contentArea">
+      <main className="mainContainer__contentArea">
         <AboutSection />
         <ExperienceSection
           entries={Experience}
@@ -98,7 +98,7 @@ export const App = () => {
           entries={Project}
           sectionId={Section.PROJECT}
         />
-      </div>
+      </main>
     </div>
   );
 };
