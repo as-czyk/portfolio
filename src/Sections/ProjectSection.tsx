@@ -32,7 +32,12 @@ const ProjectItem = (props: any) => {
 
   return (
     <div className="projectContainer">
-      <div className="projectContainer__img">Image</div>
+      <div className="projectContainer__img">
+        <img
+          src={process.env.PUBLIC_URL + img}
+          alt={title}
+        />
+      </div>
       <div className="projectContainer__content">
         <span>{title}</span>
         <span>{description}</span>
