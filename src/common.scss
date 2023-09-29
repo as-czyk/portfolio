@@ -9,6 +9,9 @@
   --default-cursor: pointer;
   --default-container-padding: 1rem;
 
+  @media (width < 1024px ) {
+    --icon-fontSize: 1.7rem;
+  }
   --icon-fontSize: 2.5rem;
 
   --small-fontSize: .75rem;

@@ -55,11 +55,11 @@ export const App = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <main className="mainContainer">
       <div className="stickyContainer">
         <div className="stickyContainer__content">
           <Title />
-          <div className="stickyContainer__content--navLinks">
+          <nav className="stickyContainer__content--navLinks">
             {Object.values(Section).map((section, index) => {
               return (
                 <a
@@ -80,8 +80,8 @@ export const App = () => {
                 </a>
               );
             })}
-          </div>
-          <div className="stickyContainer__content--iconLinks">
+          </nav>
+          <nav className="stickyContainer__content--iconLinks">
             <a
               href={"https://www.linkedin.com/in/aronscheffczyk/"}
               target={"_blank"}
@@ -109,7 +109,7 @@ export const App = () => {
                 className="iconButton"
               />
             </a>
-          </div>
+          </nav>
         </div>
       </div>
       <main className="mainContainer__contentArea">
@@ -140,6 +140,6 @@ export const App = () => {
           sectionId={Section.ACADEMIC}
         />
       </main>
-    </div>
+    </main>
   );
 };

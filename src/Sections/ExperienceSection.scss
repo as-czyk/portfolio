@@ -8,6 +8,10 @@
     &__content {
       @include flexColumnStartContainer
     }
+
+    &__time {
+      font-size: var(--small-fontSize);
+    }
   }
 }
 
