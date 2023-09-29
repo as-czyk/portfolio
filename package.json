@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://as-czyk.github.io/portfolio",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -25,6 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages --branch prod -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -47,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "prettier": "^3.0.3"
   }
 }
