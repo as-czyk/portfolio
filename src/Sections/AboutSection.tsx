@@ -11,18 +11,26 @@ export const AboutSection = () => {
     >
       <span>
         Hi there, it's Aron 👋 a self-taught coding maverick with an
-        unquenchable thirst for adventure and all things tech. When I'm not in
-        the code zone, I'm living life on the road, cheering for Eintracht
-        Frankfurt, and dominating sports like tennis, golf, and running.
+        unquenchable thirst for adventure and all things tech.
       </span>
       <span>
         My world revolves around tech, from cutting-edge gadgets to
-        revolutionary breakthroughs. Plus, I'm a <b>university lecturer</b>,
-        sharing my tech insights with the next wave of trailblazers.
+        revolutionary breakthroughs. These days my focus centers around the{" "}
+        <b>JavaScript Ecosystem</b>.
       </span>
       <span>
-        Welcome to my world - Explore my portfolio and let's ride the tech wave
-        together! 🚀
+        In the context of medical software, I use TypeScript and React to create
+        responsive web applications for{" "}
+        <b onClick={() => window.open("https://www.curalie.de", "_blank")}>
+          Curalie
+        </b>{" "}
+        . Plus, I'm a <b>university lecturer</b>, sharing my tech insights with
+        the next wave of trailblazers.
+      </span>
+      <span>
+        When I'm not in the code zone, I'm <b>living life on the road</b>,
+        cheering for Eintracht Frankfurt, and doing sports like tennis, golf,
+        and running. Welcome to my world - have fun exploring my portfolio 🚀
       </span>
     </div>
   );

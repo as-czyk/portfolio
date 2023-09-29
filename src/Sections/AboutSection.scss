@@ -11,4 +11,11 @@
     background-color: var(--secondary);
     color: var(--primary)
   }
+
+  b {
+    &:hover {
+      color: var(--action);
+      cursor: var(--default-cursor);
+    }
+  }
 }

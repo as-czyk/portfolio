@@ -17,8 +17,8 @@ import "./App.scss";
 export enum Section {
   ABOUT = "About",
   EXPERIENCE = "Experience",
+  PROJECT = "Projects",
   ACADEMIC = "Academic",
-  PROJECT = "Project",
 }
 
 export const App = () => {
@@ -119,20 +119,25 @@ export const App = () => {
           sectionId={Section.EXPERIENCE}
           linkComp={
             <div className="experienceSectionContainer__link">
-              <a>View full Resume</a>
+              <a
+                href={process.env.PUBLIC_URL + "/pdf/scheffczyk.pdf"}
+                target={"_blank"}
+              >
+                View full Resume
+              </a>
               <ArrowRightAltIcon
                 className={"experienceSectionContainer__link--icon"}
               />
             </div>
           }
         />
-        <ExperienceSection
-          entries={Academic}
-          sectionId={Section.ACADEMIC}
-        />
         <ProjectSection
           entries={Project}
           sectionId={Section.PROJECT}
+        />
+        <ExperienceSection
+          entries={Academic}
+          sectionId={Section.ACADEMIC}
         />
       </main>
     </div>
