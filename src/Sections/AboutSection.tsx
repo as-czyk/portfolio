@@ -9,16 +9,16 @@ export const AboutSection = () => {
       id={Section.ABOUT}
       className="aboutSectionContainer"
     >
-      <span>
+      <section>
         Hi there, it's Aron 👋 a self-taught coding maverick with an
         unquenchable thirst for adventure and all things tech.
-      </span>
-      <span>
+      </section>
+      <section>
         My world revolves around tech, from cutting-edge gadgets to
         revolutionary breakthroughs. These days my focus centers around the{" "}
         <b>JavaScript Ecosystem</b>.
-      </span>
-      <span>
+      </section>
+      <section>
         In the context of medical software, I use TypeScript and React to create
         responsive web applications for{" "}
         <b onClick={() => window.open("https://www.curalie.de", "_blank")}>
@@ -26,12 +26,12 @@ export const AboutSection = () => {
         </b>{" "}
         . Plus, I'm a <b>university lecturer</b>, sharing my tech insights with
         the next wave of trailblazers.
-      </span>
-      <span>
+      </section>
+      <section>
         When I'm not in the code zone, I'm <b>living life on the road</b>,
         cheering for Eintracht Frankfurt, and doing sports like tennis, golf,
         and running. Welcome to my world - have fun exploring my portfolio 🚀
-      </span>
+      </section>
     </div>
   );
 };

@@ -13,7 +13,7 @@ export const Project: Array<Project> = [
   {
     title: "Digital Doctor",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "The digital doctor is a mobile first web application that tackles the new field of video consultation. Integrating digital analytics with matomo, the app provides a full flow to book a video consultation with different specialists. ",
     link: "https://digitaldoctor.curalie.de/",
     img: "/img/digitalDoctor.png",
     tags: ["React", "TypeScript", "SCSS"],
@@ -21,7 +21,7 @@ export const Project: Array<Project> = [
   {
     title: "AWS Amplify",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "The github reposiotry contains implementations for the authentication of the aws amplify service. Registering a user via email and password as well as via third party providers, the implementation also contains the password reset functionality.",
     link: "https://github.com/as-czyk/aws-playground",
     img: "/img/amplify.jpeg",
     isAnchor: true,
@@ -30,7 +30,7 @@ export const Project: Array<Project> = [
   {
     title: "Porfolio Website",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "The Website you're currenlty looking at. Developed with react, deployed with GitHub pages, made with love  ❤️",
     link: "",
     img: "/img/portfolioWebsite.png",
     isAnchor: true,
