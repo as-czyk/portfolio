@@ -3,6 +3,8 @@
 .aboutSectionContainer {
   @include flexColumnStartContainer;
   margin-bottom: 8rem;
+  padding: var(--default-container-padding);
+
   font-size: 18px;
 
   ::selection {

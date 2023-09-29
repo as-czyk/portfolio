@@ -51,6 +51,7 @@
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: 1fr;
+  padding: var(--default-container-padding);
 
   &__time {
     @include flexColumnStartContainer

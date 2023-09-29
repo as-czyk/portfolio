@@ -1,19 +1,20 @@
 @import '../common.scss';
 
 .projectSectionContainer {
-  @include flexColumnStartContainer
+  @include flexColumnStartContainer;
 }
 
 .projectContainer {
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: 1fr;
+  padding: 1rem;
 
   &__img {
     @include flexColumnStartContainer;
     margin-right: 2rem;
 
-    img {
+    &--image {
       max-width: 100%;
       max-height: 100%;
       border-radius: var(--default-border-radius);
@@ -22,7 +23,21 @@
   }
 
   &__content {
-    @include flexColumnStartContainer
+    @include flexColumnStartContainer;
+
+    &--title {
+      @include flexRowStartContainer;
+      gap: 0.5rem;
+    }
   }
 
+  &:hover {
+    background-color: var(--primaryLight);
+    border-radius: var(--default-border-radius);
+    cursor: var(--default-cursor);
+  }
+
+  :hover > .projectContainer__content--title {
+    color: var(--action);
+  }
 }

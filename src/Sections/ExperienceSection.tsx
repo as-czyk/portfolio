@@ -48,14 +48,14 @@ export const ExperienceItem = (props: Experience) => {
   const { startYear, endYear, description, link, title, tags, company } = props;
 
   return (
-    <div className="experienceContainer">
-      <div className="experienceContainer__time">
+    <section className="experienceContainer">
+      <header className="experienceContainer__time">
         {startYear} - {endYear ?? "present"}
-      </div>
-      <div className="experienceContainer__content">
-        <span>
-          {title} {company}
-        </span>
+      </header>
+      <main className="experienceContainer__content">
+        <h3>
+          {title} ・ {company}
+        </h3>
         <span>{description}</span>
         <div className={"singleTagContainer"}>
           {tags?.map((tag: string, index) => {
@@ -67,8 +67,8 @@ export const ExperienceItem = (props: Experience) => {
             );
           })}
         </div>
-      </div>
-    </div>
+      </main>
+    </section>
   );
 };
 

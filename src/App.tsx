@@ -82,21 +82,30 @@ export const App = () => {
             })}
           </div>
           <div className="stickyContainer__content--iconLinks">
-            <a href={"https://www.linkedin.com/in/aronscheffczyk/"}>
+            <a
+              href={"https://www.linkedin.com/in/aronscheffczyk/"}
+              target={"_blank"}
+            >
               <LinkedInIcon
-                sx={{ fontSize: 35 }}
+                sx={{ fontSize: "var(--icon-fontSize)" }}
                 className="iconButton"
               />
             </a>
-            <a href={"https://github.com/as-czyk/"}>
+            <a
+              href={"https://github.com/as-czyk/"}
+              target={"_blank"}
+            >
               <GitHubIcon
-                sx={{ fontSize: 35 }}
+                sx={{ fontSize: "var(--icon-fontSize)" }}
                 className="iconButton"
               />
             </a>
-            <a href={"https://www.youtube.com"}>
+            <a
+              href={"https://www.youtube.com"}
+              target={"_blank"}
+            >
               <YouTubeIcon
-                sx={{ fontSize: 35 }}
+                sx={{ fontSize: "var(--icon-fontSize)" }}
                 className="iconButton"
               />
             </a>

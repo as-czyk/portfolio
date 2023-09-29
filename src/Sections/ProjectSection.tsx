@@ -2,6 +2,8 @@ import React from "react";
 import { AnchorElement } from "../Comps/AnchorElement";
 import { SingleTag } from "./ExperienceSection";
 
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+
 import "./ProjectSection.scss";
 
 type ProjectSectionProps = {
@@ -31,15 +33,22 @@ const ProjectItem = (props: any) => {
   const { title, description, img, link, tags } = props;
 
   return (
-    <div className="projectContainer">
+    <section
+      onClick={() => window.open(link, "_blank")}
+      className="projectContainer"
+    >
       <div className="projectContainer__img">
         <img
+          className="projectContainer__img--image"
           src={process.env.PUBLIC_URL + img}
           alt={title}
         />
       </div>
-      <div className="projectContainer__content">
-        <span>{title}</span>
+      <main className="projectContainer__content">
+        <header className="projectContainer__content--title">
+          <h3>{title}</h3>
+          <ArrowOutwardIcon sx={{ fontSize: 20 }} />
+        </header>
         <span>{description}</span>
         <div className="singleTagContainer">
           {tags.map((tag: string, index: number) => {
@@ -51,7 +60,7 @@ const ProjectItem = (props: any) => {
             );
           })}
         </div>
-      </div>
-    </div>
+      </main>
+    </section>
   );
 };
