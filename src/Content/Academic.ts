@@ -1,4 +1,4 @@
-import { Experience } from "../Sections/ExperienceSection";
+import { Experience } from "../types";
 
 export const Academic: Array<Experience> = [
   {

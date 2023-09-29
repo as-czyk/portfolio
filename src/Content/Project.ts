@@ -1,15 +1,5 @@
-import { ReactElement } from "react";
-
-type Project = {
-  link?: string;
-  title: string;
-  description: string;
-  isAnchor?: boolean;
-  tags: Array<string>;
-  img: string;
-};
-
-export const Project: Array<Project> = [
+import { Project as ProjectType } from "../types";
+export const Project: Array<ProjectType> = [
   {
     title: "Digital Doctor",
     description:

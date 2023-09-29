@@ -1,19 +1,9 @@
 import React from "react";
 import { Section } from "../App";
 import { AnchorElement } from "../Comps/AnchorElement";
+import { Experience } from "../types";
 
 import "./ExperienceSection.scss";
-
-export type Experience = {
-  startYear: number;
-  endYear?: number;
-  title: string;
-  description: string;
-  company: string;
-  link?: string;
-  tags?: Array<string>;
-  isAnchor?: boolean;
-};
 
 export type ExperienceSectionProps = {
   entries: Array<Experience>;

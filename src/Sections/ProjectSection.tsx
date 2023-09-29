@@ -1,13 +1,14 @@
 import React from "react";
 import { AnchorElement } from "../Comps/AnchorElement";
 import { SingleTag } from "./ExperienceSection";
+import { Project } from "../types";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 import "./ProjectSection.scss";
 
 type ProjectSectionProps = {
-  entries: Array<any>;
+  entries: Array<Project>;
   sectionId: string;
 };
 
@@ -29,7 +30,7 @@ export const ProjectSection = (props: ProjectSectionProps) => {
   );
 };
 
-const ProjectItem = (props: any) => {
+const ProjectItem = (props: Project) => {
   const { title, description, img, link, tags } = props;
 
   return (

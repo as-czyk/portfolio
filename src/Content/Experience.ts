@@ -1,4 +1,6 @@
-export const Experience: Array<any> = [
+import { Experience as ExperienceType } from "../types";
+
+export const Experience: Array<ExperienceType> = [
   {
     startYear: 2020,
     title: "Fullstack Software Engineer",
