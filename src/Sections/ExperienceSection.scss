@@ -1,5 +1,28 @@
 @import "../common.scss";
 
+@media (width < 1024px) {
+  .experienceContainer {
+    @include flexColumnStartContainer;
+  }
+}
+
+@media (width > 1024px) {
+  .experienceContainer {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+    padding: var(--default-container-padding);
+
+    &__time {
+      @include flexColumnStartContainer
+    }
+
+    &__content {
+      @include flexColumnStartContainer
+    }
+  }
+}
+
 .experienceSectionContainer {
   @include flexColumnStartContainer;
 
@@ -47,17 +70,3 @@
   }
 }
 
-.experienceContainer {
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: 1fr;
-  padding: var(--default-container-padding);
-
-  &__time {
-    @include flexColumnStartContainer
-  }
-
-  &__content {
-    @include flexColumnStartContainer
-  }
-}

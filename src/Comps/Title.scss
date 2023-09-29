@@ -1,14 +1,27 @@
 @import '../common.scss';
 
-.titleContainer {
-  @include flexColumnStartContainer;
 
-  p {
-    font-size: 18px;
+@media (width < 1024px) {
+  .titleContainer {
+    @include flexColumnStartContainer;
+    gap: 1rem;
+
   }
 
-  ::selection {
-    background-color: var(--secondary);
-    color: var(--primary)
+}
+
+@media (width > 1024px) {
+  .titleContainer {
+    @include flexColumnStartContainer;
+
+    p {
+      font-size: 18px;
+    }
+
+    ::selection {
+      background-color: var(--secondary);
+      color: var(--primary)
+    }
   }
 }
+
