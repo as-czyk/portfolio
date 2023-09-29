@@ -28,8 +28,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
 
-    margin-left: 28rem;
-    margin-right: 28rem;
+    @media (width > 1024px) and (width < 1440px) {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
+    margin-left: 25rem;
+    margin-right: 25rem;
 
     gap: var(--default-container-gap);
 

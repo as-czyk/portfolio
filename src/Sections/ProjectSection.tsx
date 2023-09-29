@@ -10,13 +10,15 @@ import "./ProjectSection.scss";
 type ProjectSectionProps = {
   entries: Array<Project>;
   sectionId: string;
+  mobileHeader?: string;
 };
 
 export const ProjectSection = (props: ProjectSectionProps) => {
-  const { entries, sectionId } = props;
+  const { entries, sectionId, mobileHeader } = props;
 
   return (
     <div className="projectSectionContainer">
+      <h2 className="mobileHeader">{mobileHeader}</h2>
       {Object.values(entries).map((element, index) => {
         const Item = <ProjectItem {...element} />;
 

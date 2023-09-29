@@ -9,12 +9,14 @@ export type ExperienceSectionProps = {
   entries: Array<Experience>;
   sectionId: Section;
   linkComp?: React.ReactElement;
+  mobileHeader?: string;
 };
 
 export const ExperienceSection = (props: ExperienceSectionProps) => {
-  const { entries, sectionId, linkComp = "" } = props;
+  const { entries, sectionId, linkComp = "", mobileHeader } = props;
   return (
     <div className="experienceSectionContainer">
+      <h2 className="mobileHeader">{mobileHeader}</h2>
       {entries.map((experience: Experience, index) => {
         const Item = (
           <ExperienceItem

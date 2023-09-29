@@ -13,6 +13,11 @@
       font-size: var(--small-fontSize);
     }
   }
+
+  .mobileHeader {
+    position: sticky;
+    top: 10px;
+  }
 }
 
 @media (width > 1024px) {
@@ -29,6 +34,10 @@
     &__content {
       @include flexColumnStartContainer
     }
+  }
+
+  .mobileHeader {
+    display: none;
   }
 }
 

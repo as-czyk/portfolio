@@ -50,7 +50,11 @@ export const App = () => {
   };
 
   const interSectionCallback = (entries: IntersectionObserverEntry[]) => {
-    if (entries[0].isIntersecting)
+    const filteredEntries = entries.filter((entry) => entry?.isIntersecting);
+
+    if (filteredEntries.length === 0) return;
+
+    if (filteredEntries[0]?.isIntersecting)
       setActiveSection(entries[0].target.id as Section);
   };
 
@@ -130,14 +134,17 @@ export const App = () => {
               />
             </div>
           }
+          mobileHeader={"Professional Experience"}
         />
         <ProjectSection
           entries={Project}
           sectionId={Section.PROJECT}
+          mobileHeader={"Projects"}
         />
         <ExperienceSection
           entries={Academic}
           sectionId={Section.ACADEMIC}
+          mobileHeader={"University degrees"}
         />
       </main>
     </main>
