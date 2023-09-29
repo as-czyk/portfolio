@@ -3,6 +3,11 @@
 @media (width < 1024px) {
   .experienceContainer {
     @include flexColumnStartContainer;
+    gap: .2rem;
+
+    &__content {
+      @include flexColumnStartContainer
+    }
   }
 }
 

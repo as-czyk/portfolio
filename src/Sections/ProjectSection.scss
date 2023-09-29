@@ -6,13 +6,21 @@
 
 @media (width < 1024px) {
   .projectContainer {
-    @include flexColumnStartContainer;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--default-container-gap);
+
     &__img {
-      &--image {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: var(--default-border-radius);
-        border: 1px solid var(--primaryLight);
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &__content {
+      @include flexColumnStartContainer;
+      grid-area: 2 / 1 / 2 / 3;
+
+      &--title {
+        @include flexRowStartContainer;
       }
     }
   }
@@ -28,13 +36,6 @@
     &__img {
       @include flexColumnStartContainer;
       margin-right: 2rem;
-
-      &--image {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: var(--default-border-radius);
-        border: 1px solid var(--primaryLight);
-      }
     }
 
     &__content {
