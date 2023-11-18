@@ -24,10 +24,10 @@ export const ProjectSection = (props: ProjectSectionProps) => {
         <h2>{mobileHeader}</h2>
       </header>
       {Object.values(entries).map((element, index) => {
-        const Item = <ProjectItem {...element} />;
+        const Item = <ProjectItem key={`${element.title}_${index}`} {...element} />;
 
         if (element?.isAnchor) {
-          return <AnchorElement key={`${sectionId}_${index}`}sectionId={sectionId}>{Item}</AnchorElement>;
+          return <AnchorElement key={`${sectionId}_${index}`} sectionId={sectionId}>{Item}</AnchorElement>;
         }
 
         return Item;
