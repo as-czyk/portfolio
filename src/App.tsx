@@ -4,7 +4,7 @@ import { ExperienceSection } from "./Sections/ExperienceSection";
 import { ProjectSection } from "./Sections/ProjectSection";
 import { Experience } from "./Content/Experience";
 import { Academic } from "./Content/Academic";
-import { Title, TopButton } from "./Comps/";
+import { Title, TopButton, SwitchComp } from "./Comps/";
 import { Project } from "./Content/Project";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -60,7 +60,7 @@ export const App = () => {
 
   return (
     <main className="mainContainer">
-            <TopButton />
+      <TopButton />
 
       <div className="stickyContainer">
         <div className="stickyContainer__content">
@@ -87,6 +87,10 @@ export const App = () => {
               );
             })}
           </nav>
+          <div className="stickyContainer__content--switches">
+            <SwitchComp />
+            <SwitchComp />
+          </div>
           <nav className="stickyContainer__content--iconLinks">
             <a
               href={"https://www.linkedin.com/in/aronscheffczyk/"}

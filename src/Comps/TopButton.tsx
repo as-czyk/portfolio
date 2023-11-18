@@ -31,7 +31,7 @@ export const TopButton = () => {
 
     return (
         <button className={`topButton ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
-            <KeyboardArrowUpIcon />
+            <KeyboardArrowUpIcon style={{ color: 'var(--primary)' }}  />
         </button>
     );
 };

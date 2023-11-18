@@ -25,6 +25,10 @@
     @include flexRowStartContainer;
     gap: 1rem;
   }
+
+  .stickyContainer__content--switches {
+    display: none;
+  }
 }
 
 @media (width > 1024px) {
@@ -80,8 +84,12 @@
 
       &--iconLinks {
         @include flexRowStartContainer;
-        margin-top: auto;
         cursor: var(--default-cursor)
+      }
+
+      &--switches {
+        margin-top: auto;
+        @include flexRowStartContainer;
       }
     }
   }
