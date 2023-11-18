@@ -1,0 +1,35 @@
+@import '../common.scss';
+
+
+
+@media (width > 1024px) {
+    .topButton {
+       display: none !important
+    }
+}
+
+
+.topButton {
+    position: fixed;
+    
+    bottom: 20px;
+    right: 20px;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 50%;
+    padding: 10px; 
+    
+    @include flexRowStartContainer;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--action);
+
+
+
+    &.visible {
+        opacity: 0.8;
+    }
+
+}

@@ -4,7 +4,7 @@ import { ExperienceSection } from "./Sections/ExperienceSection";
 import { ProjectSection } from "./Sections/ProjectSection";
 import { Experience } from "./Content/Experience";
 import { Academic } from "./Content/Academic";
-import { Title } from "./Comps/Title";
+import { Title, TopButton } from "./Comps/";
 import { Project } from "./Content/Project";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -60,6 +60,8 @@ export const App = () => {
 
   return (
     <main className="mainContainer">
+            <TopButton />
+
       <div className="stickyContainer">
         <div className="stickyContainer__content">
           <Title />
