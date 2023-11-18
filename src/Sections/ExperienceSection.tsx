@@ -26,7 +26,7 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
         );
 
         if (experience?.isAnchor) {
-          return <AnchorElement sectionId={sectionId}>{Item}</AnchorElement>;
+          return <AnchorElement key={`${sectionId}_${index}`} sectionId={sectionId}>{Item}</AnchorElement>;
         }
 
         return Item;

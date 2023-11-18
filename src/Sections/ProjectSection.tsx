@@ -23,7 +23,7 @@ export const ProjectSection = (props: ProjectSectionProps) => {
         const Item = <ProjectItem {...element} />;
 
         if (element?.isAnchor) {
-          return <AnchorElement sectionId={sectionId}>{Item}</AnchorElement>;
+          return <AnchorElement key={`${sectionId}_${index}`}sectionId={sectionId}>{Item}</AnchorElement>;
         }
 
         return Item;
