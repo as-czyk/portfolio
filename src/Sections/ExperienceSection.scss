@@ -20,6 +20,11 @@
     width: 100%;
 
     &.scrolled {
+      @media (width < 1024px) and (width > 768px) {
+        width: calc(100% + 2 * 10rem);
+        margin-left: -10rem;
+      }
+
       width: calc(100% + 2 * 2rem);
       margin-left: -2rem;
       background-color: var(--primaryLight);
@@ -32,6 +37,9 @@
       transition: width 1s, background-color 1s, opacity 1s;
 
       h2 {
+        @media (width < 1024px) and (width > 768px) {
+          margin-left: 10rem !important
+        }
         margin-left: 2rem !important
       }
     }
