@@ -2,6 +2,7 @@ import React from "react";
 import { AnchorElement } from "../Comps/AnchorElement";
 import { SingleTag } from "./ExperienceSection";
 import { Project } from "../types";
+import { useScrollCheck } from "../Hooks/useScrollHook";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
@@ -15,10 +16,13 @@ type ProjectSectionProps = {
 
 export const ProjectSection = (props: ProjectSectionProps) => {
   const { entries, sectionId, mobileHeader } = props;
+  const isScrolled = useScrollCheck(sectionId + 'scroll');
 
   return (
-    <div className="projectSectionContainer">
-      <h2 className="mobileHeader">{mobileHeader}</h2>
+    <div id={sectionId + 'scroll'} className="projectSectionContainer">
+      <header className={`mobileHeader ${isScrolled ? 'scrolled' : ''}`}>
+        <h2>{mobileHeader}</h2>
+      </header>
       {Object.values(entries).map((element, index) => {
         const Item = <ProjectItem {...element} />;
 

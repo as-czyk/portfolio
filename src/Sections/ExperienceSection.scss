@@ -16,7 +16,25 @@
 
   .mobileHeader {
     position: sticky;
-    top: 10px;
+    top: 0px;
+    width: 100%;
+
+    &.scrolled {
+      width: calc(100% + 2 * 2rem);
+      margin-left: -2rem;
+      background-color: var(--primaryLight);
+      opacity: 0.8;
+
+      @include flexRowStartContainer;
+      align-items: center;
+      height: 50px;
+
+      transition: width 1s, background-color 1s, opacity 1s;
+
+      h2 {
+        margin-left: 2rem !important
+      }
+    }
   }
 }
 

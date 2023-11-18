@@ -1,16 +1,19 @@
 import React from "react";
 import { Section } from "../App";
+import { useScrollCheck } from "../Hooks/useScrollHook";
 
 import "./AboutSection.scss";
 
 export const AboutSection = () => {
+  const isScrolled = useScrollCheck(Section.ABOUT);
+
   return (
     <>
       <div
         id={Section.ABOUT}
         className="aboutSectionContainer"
       >
-        <header className="mobileHeader">
+        <header className={`mobileHeader ${isScrolled ? 'scrolled' : ''}`}>
           <h2>About</h2>
         </header>
         <section>

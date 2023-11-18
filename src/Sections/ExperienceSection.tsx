@@ -2,6 +2,7 @@ import React from "react";
 import { Section } from "../App";
 import { AnchorElement } from "../Comps/AnchorElement";
 import { Experience } from "../types";
+import { useScrollCheck } from "../Hooks/useScrollHook";
 
 import "./ExperienceSection.scss";
 
@@ -14,9 +15,14 @@ export type ExperienceSectionProps = {
 
 export const ExperienceSection = (props: ExperienceSectionProps) => {
   const { entries, sectionId, linkComp = "", mobileHeader } = props;
+
+  const isScrolled = useScrollCheck(sectionId + 'scroll');
+
   return (
-    <div className="experienceSectionContainer">
-      <h2 className="mobileHeader">{mobileHeader}</h2>
+    <div id={sectionId + 'scroll'} className="experienceSectionContainer">
+      <header className={`mobileHeader ${isScrolled ? 'scrolled' : ''}`}>
+        <h2>{mobileHeader}</h2>
+      </header>
       {entries.map((experience: Experience, index) => {
         const Item = (
           <ExperienceItem
@@ -26,7 +32,14 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
         );
 
         if (experience?.isAnchor) {
-          return <AnchorElement key={`${sectionId}_${index}`} sectionId={sectionId}>{Item}</AnchorElement>;
+          return (
+            <AnchorElement
+              key={`${sectionId}_${index}`}
+              sectionId={sectionId}
+            >
+              {Item}
+            </AnchorElement>
+          );
         }
 
         return Item;
