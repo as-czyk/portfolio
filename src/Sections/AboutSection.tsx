@@ -1,10 +1,12 @@
 import React from "react";
 import { Section } from "../App";
 import { useScrollCheck } from "../Hooks/useScrollHook";
+import { useTranslation } from 'react-i18next';
 
 import "./AboutSection.scss";
 
 export const AboutSection = () => {
+  const { t } = useTranslation();
   const isScrolled = useScrollCheck(Section.ABOUT);
 
   return (

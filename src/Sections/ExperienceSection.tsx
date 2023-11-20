@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useTransition } from "react";
 import { Section } from "../App";
 import { AnchorElement } from "../Comps/AnchorElement";
 import { Experience } from "../types";
 import { useScrollCheck } from "../Hooks/useScrollHook";
+import { useTranslation } from "react-i18next";
 
 import "./ExperienceSection.scss";
 
@@ -51,6 +52,7 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
 
 export const ExperienceItem = (props: Experience) => {
   const { startYear, endYear, description, link, title, tags, company } = props;
+  const { t } = useTranslation()
 
   return (
     <section className="experienceContainer">
@@ -59,9 +61,9 @@ export const ExperienceItem = (props: Experience) => {
       </header>
       <main className="experienceContainer__content">
         <h3>
-          {title} ・ {company}
+          {t(title)} ・ {company}
         </h3>
-        <span>{description}</span>
+        <span style={{textAlign: 'justify'}}>{t(description)}</span>
         <div className={"singleTagContainer"}>
           {tags?.map((tag: string, index) => {
             return (

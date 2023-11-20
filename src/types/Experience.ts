@@ -1,3 +1,5 @@
+import { Section } from "../App";
+
 export type Experience = {
   startYear: number;
   endYear?: number;

@@ -3,6 +3,7 @@ import { AnchorElement } from "../Comps/AnchorElement";
 import { SingleTag } from "./ExperienceSection";
 import { Project } from "../types";
 import { useScrollCheck } from "../Hooks/useScrollHook";
+import { useTranslation } from "react-i18next";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
@@ -38,6 +39,7 @@ export const ProjectSection = (props: ProjectSectionProps) => {
 
 const ProjectItem = (props: Project) => {
   const { title, description, img, link, tags } = props;
+  const { t } = useTranslation();
 
   return (
     <section
@@ -48,15 +50,15 @@ const ProjectItem = (props: Project) => {
         <img
           className="projectContainer__img--image"
           src={process.env.PUBLIC_URL + img}
-          alt={title}
+          alt={t(title)}
         />
       </div>
       <main className="projectContainer__content">
         <header className="projectContainer__content--title">
-          <h3>{title}</h3>
+          <h3>{t(title)}</h3>
           <ArrowOutwardIcon sx={{ fontSize: 20 }} />
         </header>
-        <span>{description}</span>
+        <span style={{textAlign: 'justify'}}>{t(description)}</span>
         <div className="singleTagContainer">
           {tags.map((tag: string, index: number) => {
             return (

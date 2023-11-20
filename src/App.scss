@@ -89,7 +89,7 @@
 
       &--switches {
         margin-top: auto;
-        @include flexRowStartContainer;
+        @include flexColumnStartContainer;
       }
     }
   }
@@ -132,4 +132,8 @@
   &:hover {
     color: var(--secondaryLight);
   }
+}
+
+.fade {
+  transition: opacity 0.5s
 }
