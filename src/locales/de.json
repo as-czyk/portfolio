@@ -1,7 +1,7 @@
 {
     "About": {
         "header": "About",
-        "intro": "Hi, ich bin's, Aron 👋, ein Coding-Enthusiast mit unstillbarem Abenteuerdurst und einer Leidenschaft für alles, was mit Technik zu tun hat",
+        "intro": "Hi, ich bin's, Aron 👋 - ein Coding-Enthusiast, der mit offnene Augen die Welt der Technologie erkundet.",
         "tech": "Meine Welt dreht sich um Technologie, von Next.JS über Smart-Home bis hin zu Backend Technologien. In letzter Zeit konzentriere ich mich auf das <b>JavaScript-Ökosystem</b>.",
         "university": "Im Bereich der medizinischen Software verwende ich TypeScript und React, um reaktionsfähige Webanwendungen für <b>Medulife</b> zu erstellen. Außerdem bin ich <b>Universitätsdozent</b> und teile meine technischen Erkenntnisse mit der nächsten Generation von Webentwicklern.",
         "hobbies": "Wenn ich nicht gerade in der Code-Zone bin, feuere ich <b>Eintracht Frankfurt</b> an und treibe Sportarten wie <b>Tennis, Golf und Laufen</b>. Willkommen in meiner Welt - viel Spaß beim Erkunden meines Portfolios 🚀"
@@ -13,7 +13,7 @@
         },
         "aa": {
             "title": "AWS Amplify",
-            "description": "Das Github Reposiotry enthält Implementierungen für die Authentifizierung des aws amplify Service. Die Registrierung eines Benutzers über E-Mail und Passwort sowie über Drittanbieter ist ebenso Teil der Implementierung, wie auch die Passwort-Reset-Funktionalität."
+            "description": "Das Github Reposiotry enthält Implementierungen für die Authentifizierung mit dem AWS Amplify Service. Die Registrierung eines Benutzers über E-Mail und Passwort sowie über Drittanbieter wie Google oder Facebook ist ebenso Teil der Implementierung, wie auch die Passwort-Reset-Funktionalität."
         },
         "pw": {
             "title": "Portfolio Webseite",
@@ -24,7 +24,7 @@
     "Experience": {
         "ml": {
             "title": "Fullstack Software Engineer",
-            "description": "Als Fullstack-Engineer bin ich an der Entwicklung von Webanwendungen für den internen und externen Gebrauch im medizinischen Kontext beteiligt. Dabei kann ich wertvolle Erfahrungen in der Frontend-Entwicklung und dem gesamten Software-Entwicklungszyklus sammeln."
+            "description": "Als Fullstack Engineer bin ich an der Entwicklung von Webanwendungen für den internen und externen Gebrauch im medizinischen Kontext beteiligt. Dabei kann ich wertvolle Erfahrungen in der Frontend-Entwicklung und dem gesamten Software-Entwicklungszyklus sammeln."
         },
         "ibm": {
             "title": "Software Engineer",
@@ -32,17 +32,17 @@
         },
         "mm": {
             "title": "Digital Marketer",
-            "description": "Der Start meiner beruflichen Laufbahn bei Miles and More gab mir wertvolle Einblicke in den E-Commerce-Sektor mit den Schwerpunkten Content Management und Digital Analytics."
+            "description": "Der Start meiner beruflichen Laufbahn bei Miles & More gab mir wertvolle Einblicke in den E-Commerce-Sektor mit den Schwerpunkten Content Management und Digital Analytics."
         }
     },
     "Academic": {
         "ms": {
             "title": "IT-Management",
-            "description": "Dieses Programm öffnete mir die Türen zu einer Welt, in der Technologie und Wirtschaft nahtlos ineinander übergehen. Ausgestattet mit einem tieferen Verständnis von IT-Strategie, Projektmanagement und Führung, bin ich bereit, eine Karriere zu beginnen, die im digitalen Zeitalter gedeiht. Das Wissen und die Fähigkeiten, die ich während meines Studiums erworben habe, haben mich nicht nur beruflich weitergebracht, sondern mich auch als vorausschauende IT-Führungskraft positioniert, die bereit ist, einen bedeutenden Beitrag zu leisten."
+            "description": "Dieses Program öffnete mir die Türen zu einer Welt, in der Technologie und Wirtschaft nahtlos ineinander übergehen. Ausgestattet mit einem tieferen Verständnis von IT-Strategie, Projektmanagement und Führung, bin ich bereit, meine berufliche Karriere in einem sich stetig wandelenden digitalen Umfeld voranzutreiben. Das Wissen und die Fähigkeiten, die ich während meines Studiums erworben habe, haben mich nicht nur beruflich weitergebracht, sondern mich auch als vorausschauende IT-Führungskraft positioniert, die bereit ist, einen bedeutenden Beitrag zu leisten."
         },
         "ba": {
             "title": "Digitale Medien",
-            "description": "Dieses Programm hat nicht nur meine künstlerischen und technischen Fähigkeiten verfeinert, sondern auch mein Verständnis für die sich ständig weiterentwickelnde digitale Landschaft vertieft. Ich bin bereit, meine Spuren in der dynamischen Welt der digitalen Medien zu hinterlassen, in der Storytelling, Design und Technologie zusammenkommen, um die Zukunft der Kommunikation und des Ausdrucks zu gestalten."
+            "description": "Dieses Studium hat nicht nur meine künstlerischen und technischen Fähigkeiten verfeinert, sondern auch mein Verständnis für die sich ständig weiterentwickelnde digitale Landschaft vertieft. Ich bin bereit, meine Spuren in der dynamischen Welt der digitalen Medien zu hinterlassen, in der Storytelling, Design und Technologie zusammenkommen, um die Zukunft der Kommunikation und des Ausdrucks zu gestalten."
         }
 
     },
