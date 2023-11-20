@@ -1,0 +1,59 @@
+{
+    "About": {
+        "header": "About",
+        "intro": "Hi there, it's Aron 👋 a self-taught coding maverick with an unquenchable thirst for adventure and all things tech.",
+        "tech": "My world revolves around tech, from cutting-edge gadgets to revolutionary breakthroughs. These days my focus centers around the <b>JavaScript Ecosystem</b>.",
+        "university": "In the context of medical software, I use TypeScript and React to create responsive web applications for Curalie. Plus, I'm a <b>university lecturer</b>, sharing my tech insights with the next wave of trailblazers.",
+        "hobbies": "When I'm not in the code zone, I'm <b>living life on the road</b>, cheering for Eintracht Frankfurt, and doing sports like tennis, golf, and running. Welcome to my world - have fun exploring my portfolio 🚀"
+    },
+    "Projects": {
+        "dd": {
+            "title": "Digital Doctor",
+            "description": "The digital doctor is a mobile first web application that tackles the new field of video consultation. Integrating digital analytics with matomo, the app provides a full flow to book a video consultation with different specialists. "
+        },
+        "aa": {
+            "title": "AWS Amplify",
+            "description": "The github reposiotry contains implementations for the authentication of the aws amplify service. Registering a user via email and password as well as via third party providers, the implementation also contains the password reset functionality."
+        },
+        "pw": {
+            "title": "Porfolio Website",
+            "description": "The Website you're currenlty looking at. Developed with react, deployed with GitHub pages, made with love  ❤️"
+        }
+    },
+    "Experience": {
+        "ml": {
+            "title": "Fullstack Software Engineer",
+            "description": "As a fullstack engineer I was involved in developing web applications for internal and external usage in the medical context. I was able to gain valuable experience in front-end development and the overall software development cycle."
+
+        },
+        "ibm": {
+            "title": "Software Engineer",
+            "description": "During my years at IBM I have created and implemented new digital solutions for various clients comprising different industries.The possibility to develop technical solutions and to consult companies in transforming business sectors due to an increasing extent of the digitalization provides me with a large overview of tranding topics in the tech-sector."
+
+        },
+        "mm": {
+            "title": "Digital Marketer",
+            "description": "The start of my professional career at Miles and More gave me valuable insights into the e-commerce sector with a focus on content management and digital analytics."
+        }
+
+    },
+    "Academic": {
+        "ms": {
+            "title": "IT-Management",
+            "description": "This program opened doors to a world where technology and business seamlessly intertwine. Equipped with a deeper understanding of IT strategy, project management, and leadership, I am ready to embark on a career that thrives in the digital age. The knowledge and skills acquired during my studies have not only elevated my professional journey but have also positioned me as a forward-thinking IT leader ready to make a meaningful impact."
+        },
+        "ba": {
+            "title": "Digital Media",
+            "description": "This program has not only honed my artistic and technical skills but also deepened my understanding of the ever-evolving digital landscape. I'm ready to make my mark in the dynamic world of digital media, where storytelling, design, and technology converge to shape the future of communication and expression."
+        }
+    },
+    "common": {
+        "quote": "I build stuff for the Web.",
+        "nav": {
+            "About": "About",
+            "Experience": "Experience",
+            "Projects": "Projects",
+            "Academic": "Academic"
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useTransition } from "react";
 import { AboutSection } from "./Sections/AboutSection";
 import { ExperienceSection } from "./Sections/ExperienceSection";
 import { ProjectSection } from "./Sections/ProjectSection";
@@ -6,6 +6,7 @@ import { Experience } from "./Content/Experience";
 import { Academic } from "./Content/Academic";
 import { Title, TopButton, SwitchComp } from "./Comps/";
 import { Project } from "./Content/Project";
+import { useTranslation } from "react-i18next";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -13,6 +14,25 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import "./App.scss";
+
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import en from './locales/en.json';
+import de from './locales/de.json';
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: { translation: en },
+      de: { translation: de },
+    },
+    lng: 'en',
+    fallbackLng: 'en',
+    interpolation: {
+      escapeValue: false,
+    },
+  });
 
 export enum Section {
   ABOUT = "About",
@@ -23,6 +43,7 @@ export enum Section {
 
 export const App = () => {
   const [activeSection, setActiveSection] = useState<Section>(Section.ABOUT);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(interSectionCallback);
@@ -58,10 +79,11 @@ export const App = () => {
       setActiveSection(entries[0].target.id as Section);
   };
 
+  const changeLanguage = (lng: string) => i18n.changeLanguage(lng);
+
   return (
     <main className="mainContainer">
       <TopButton />
-
       <div className="stickyContainer">
         <div className="stickyContainer__content">
           <Title />
@@ -81,15 +103,15 @@ export const App = () => {
                           : "navLinkContainer__bar"
                       }
                     />
-                    {section}
+                    {t('common.nav.' + section)}
                   </div>
                 </a>
               );
             })}
           </nav>
           <div className="stickyContainer__content--switches">
-            <SwitchComp />
-            <SwitchComp />
+            <SwitchComp labelOn="🇩🇪" labelOff="🇬🇧" onToggle={(checked) => changeLanguage(checked ? 'de' : 'en')} />
+            {/* <SwitchComp labelOn="🔦" labelOff="💡"/> */}
           </div>
           <nav className="stickyContainer__content--iconLinks">
             <a

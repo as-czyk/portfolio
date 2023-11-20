@@ -1,0 +1,58 @@
+{
+    "About": {
+        "header": "About",
+        "intro": "Hi, ich bin's, Aron 👋, ein Coding-Enthusiast mit unstillbarem Abenteuerdurst und einer Leidenschaft für alles, was mit Technik zu tun hat",
+        "tech": "Meine Welt dreht sich um Technologie, von Next.JS über Smart-Home bis hin zu Java. In letzter Zeit konzentriere ich mich auf das JavaScript-Ökosystem.",
+        "university": "Im Bereich der medizinischen Software verwende ich TypeScript und React, um reaktionsfähige Webanwendungen für Curalie zu erstellen. Außerdem bin ich Universitätsdozent und teile meine technischen Erkenntnisse mit der nächsten Generation von Webentwicklern.",
+        "hobbies": "Wenn ich nicht gerade in der Code-Zone bin, feuere ich Eintracht Frankfurt an und treibe Sportarten wie Tennis, Golf und Laufen. Willkommen in meiner Welt - viel Spaß beim Erkunden meines Portfolios 🚀"
+    },
+    "Projects": {
+        "dd": {
+            "title": "Digital Doctor",
+            "description": "Der Digital Doctor ist eine mobile Webanwendung, die den neuen Bereich der Videosprechstunde aufgreift. Die App bildet einen vollständigen Prozess zur Buchung einer Videosprechstunde mit verschiedenen Spezialisten ab. Die Integration von digitalen Analytics mit Matomo erlaubt ein tiefergehendes Verständnis der Anwender."
+        },
+        "aa": {
+            "title": "AWS Amplify",
+            "description": "Das Github Reposiotry enthält Implementierungen für die Authentifizierung des aws amplify Service. Die Registrierung eines Benutzers über E-Mail und Passwort sowie über Drittanbieter ist ebenso Teil der Implementierung, wie auch die Passwort-Reset-Funktionalität."
+        },
+        "pw": {
+            "title": "Portfolio Webseite",
+            "description": "Die Website, die Du gerade ansiehst. Entwickelt mit React, bereitgestellt mit GitHub Pages, gemacht mit Liebe ❤️"
+        }
+
+    },
+    "Experience": {
+        "ml": {
+            "title": "Fullstack Software Engineer",
+            "description": "Als Fullstack-Engineer bin ich an der Entwicklung von Webanwendungen für den internen und externen Gebrauch im medizinischen Kontext beteiligt. Dabei kann ich wertvolle Erfahrungen in der Frontend-Entwicklung und dem gesamten Software-Entwicklungszyklus sammeln."
+        },
+        "ibm": {
+            "title": "Software Engineer",
+            "description": "In meiner Zeit bei IBM habe ich für verschiedene Kunden aus unterschiedlichen Branchen neue digitale Lösungen entwickelt und implementiert. Die Möglichkeit, technische Lösungen zu entwickeln und Unternehmen bei der Transformation von Geschäftsfeldern durch die zunehmende Digitalisierung zu beraten, verschafft mir einen großen Überblick über aktuelle Themen im Tech-Sektor."
+        },
+        "mm": {
+            "title": "Digital Marketer",
+            "description": "Der Start meiner beruflichen Laufbahn bei Miles and More gab mir wertvolle Einblicke in den E-Commerce-Sektor mit den Schwerpunkten Content Management und Digital Analytics."
+        }
+    },
+    "Academic": {
+        "ms": {
+            "title": "IT-Management",
+            "description": "Dieses Programm öffnete mir die Türen zu einer Welt, in der Technologie und Wirtschaft nahtlos ineinander übergehen. Ausgestattet mit einem tieferen Verständnis von IT-Strategie, Projektmanagement und Führung, bin ich bereit, eine Karriere zu beginnen, die im digitalen Zeitalter gedeiht. Das Wissen und die Fähigkeiten, die ich während meines Studiums erworben habe, haben mich nicht nur beruflich weitergebracht, sondern mich auch als vorausschauende IT-Führungskraft positioniert, die bereit ist, einen bedeutenden Beitrag zu leisten."
+        },
+        "ba": {
+            "title": "Digitale Medien",
+            "description": "Dieses Programm hat nicht nur meine künstlerischen und technischen Fähigkeiten verfeinert, sondern auch mein Verständnis für die sich ständig weiterentwickelnde digitale Landschaft vertieft. Ich bin bereit, meine Spuren in der dynamischen Welt der digitalen Medien zu hinterlassen, in der Storytelling, Design und Technologie zusammenkommen, um die Zukunft der Kommunikation und des Ausdrucks zu gestalten."
+        }
+
+    },
+    "common": {
+        "quote": "Ich baue Zeug im Internet.",
+        "nav": {
+            "About": "Über mich",
+            "Experience": "Beruf",
+            "Projects": "Projekte",
+            "Academic": "Universität"
+        }
+    }
+}
