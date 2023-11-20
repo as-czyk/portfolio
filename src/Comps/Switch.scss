@@ -1,10 +1,6 @@
 @import './../common.scss';
 
-.toggle-button {
-    // styles for the inactive state
-
-    &.active {
-        background-color: var(--action); // use the action color for the active state
-        // other styles for the active state
-    }
+.switch {
+    @include flexRowStartContainer;
+    align-items: center;
 }
