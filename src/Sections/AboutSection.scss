@@ -4,6 +4,10 @@
     @include flexColumnStartContainer;
   }
 
+  .sectionContent {
+    text-align: justify;
+  }
+
  @media (width > 1024px) {
    .aboutSectionContainer {
      @include flexColumnStartContainer;

@@ -9,8 +9,8 @@ interface SwitchComp extends SwitchProps {
   labelOff?: JSX.Element | string
 }
 
-export const SwitchComp = (props: SwitchComp) => {
-  const { initialActive = false, onToggle, labelOn = "", labelOff = "" } = props;
+export const SwitchComp = ({ labelOff = "", labelOn = "", ...props }: SwitchComp) => {
+  const { initialActive = false, onToggle, } = props;
 
   const [isChecked, setIsChecked] = useState(initialActive);
 
@@ -31,6 +31,10 @@ export const SwitchComp = (props: SwitchComp) => {
           },
           "&.MuiSwitch-root .Mui-checked": {
             color: "var(--action)",
+
+            "&.MuiSwitch-track": {
+                backgroundColor: "var(--textColor)",
+            }
           },
           "&.MuiSwitch-root .MuiSwitch-track": {
             backgroundColor: "var(--textColor)",
