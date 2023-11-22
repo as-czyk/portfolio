@@ -9,6 +9,13 @@ export const Experience: Array<ExperienceType> = [
     tags: ["React", "TypeScript", "JavaScript", "SCSS", "Java"],
   },
   {
+    startYear: 2023,
+    title: "Experience.iu.title",
+    company: "International University",
+    description: "Experience.iu.description",
+    tags: ["Webentwicklung", "Lehre", "Mentoring", "Curriculum Entwicklung", "Präsentationen"],
+  },
+  {
     startYear: 2017,
     endYear: 2020,
     title: "Experience.ibm.title",

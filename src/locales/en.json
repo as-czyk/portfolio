@@ -26,6 +26,10 @@
             "description": "As a fullstack engineer I was involved in developing web applications for internal and external usage in the medical context. I was able to gain valuable experience in front-end development and the overall software development cycle."
 
         },
+        "iu": {
+            "title": "Lecturer",
+            "description": "As a freelance lecturer in the field of web programming, I have the opportunity to pass on my knowledge to computer science students. This involves not only the basics of HTML, CSS and JavaScript, but also modern layout techniques with GRID and Flexbox as well as server-side programming with PHP."
+        },
         "ibm": {
             "title": "Software Engineer",
             "description": "During my years at IBM I have created and implemented new digital solutions for various clients comprising different industries.The possibility to develop technical solutions and to consult companies in transforming business sectors due to an increasing extent of the digitalization provides me with a large overview of tranding topics in the tech-sector."
@@ -35,7 +39,6 @@
             "title": "Digital Marketer",
             "description": "The start of my professional career at Miles and More gave me valuable insights into the e-commerce sector with a focus on content management and digital analytics."
         }
-
     },
     "Academic": {
         "ms": {
